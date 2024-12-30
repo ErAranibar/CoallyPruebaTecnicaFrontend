@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Manager - Frontend
 
-## Getting Started
+Este es el frontend de la aplicación de gestión de tareas "Task Manager" creado por Erick Aranibar como parte de la prueba técnica para desarrollador full stack en Coally. La aplicación permite a los usuarios crear, leer, actualizar y eliminar tareas de forma intuitiva. El frontend está construido con **React.js** y utiliza **Tailwind CSS** para el diseño y **Redux** para manejar el estado global.
 
-First, run the development server:
+## Enlace a la aplicación desplegada
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+La aplicación desplegada está disponible en:  
+[**Enlace a la aplicación desplegada**](https://coally-prueba-tecnica-frontend-rkd6.vercel.app/)
+
+## Instalación y ejecución local
+
+Para ejecutar este proyecto localmente, sigue estos pasos:
+
+### 1. Clonar el repositorio
+```
+git clone https://github.com/ErAranibar/CoallyPruebaTecnicaFrontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Navegar a la carpeta del proyecto
+```
+cd CoallyPruebaTecnicaFrontend
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Instalar las dependencias
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Crear el archivo `.env.local`
+Crea un archivo `.env.local` en la raíz del proyecto y agrega las siguientes variables de entorno:
 
-## Learn More
+```env
+API_URL=https://coallypruebatecnicabackend.onrender.com/
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 5. Ejecutar el proyecto localmente
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El proyecto estará corriendo en [http://localhost:3000](http://localhost:3000).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Funcionalidades
 
-## Deploy on Vercel
+- **Autenticación**: Muestra pantallas de registro e inicio de sesión. Se puede utilizar cualquier correo, no hay validaciones con envíos automáticos. Después de registrarse pide volver a iniciar sesión. La sesión dura 5 minutos antes de expirar.
+- **Pantalla principal**: Muestra la lista de tareas con título, estado (completada o pendiente) y fecha de creación.
+- **Formulario para agregar tareas**: Permite agregar nuevas tareas a la lista.
+- **Editar y eliminar tareas**: Puedes editar o eliminar tareas directamente desde la lista.
+- **Marcar como completada o pendiente**: Función para cambiar el estado de las tareas.
+- **Filtro de tareas**: Permite filtrar las tareas por estado (completadas, pendientes o todas).
+- **Diseño responsivo**: Optimizado para dispositivos de escritorio y móviles.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Despliegue
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto se despliega automáticamente en **Vercel**. Para conectarlo con tu cuenta de Vercel:
+
+1. Conecta tu repositorio de GitHub a Vercel.
+2. Vercel detectará automáticamente que es un proyecto de Next.js y lo desplegará.
+3. Configurar las variables de entorno para apuntar al proyecto de backend.
+4. Cada vez que hagas un push a la rama principal, Vercel desplegará automáticamente la última versión.
+
+## Tecnologías usadas
+
+- React.js: Librería principal para la construcción de la UI.
+- Redux Toolkit: Para manejar el estado global de la aplicación.
+- Axios: Para las peticiones HTTP al backend.
+- Tailwind CSS: Framework de CSS para un diseño responsivo y elegante.
+- Next.js: Framework de React para renderizado del lado del servidor y optimización automática.
+- Vercel: Plataforma para el despliegue del frontend.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
