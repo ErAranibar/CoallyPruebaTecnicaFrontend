@@ -42,7 +42,7 @@ El proyecto estará corriendo en [http://localhost:3000](http://localhost:3000).
 
 ## Funcionalidades
 
-- **Autenticación**: Muestra pantallas de registro e inicio de sesión. Se puede utilizar cualquier correo, no hay validaciones con envíos automáticos. Después de registrarse pide volver a iniciar sesión. La sesión dura 5 minutos antes de expirar.
+- **Autenticación**: Muestra pantallas de registro e inicio de sesión. Se puede utilizar cualquier correo, no hay validaciones con envíos automáticos. Después de registrarse pide volver a iniciar sesión. La sesión dura 1 hora antes de expirar.
 - **Pantalla principal**: Muestra la lista de tareas con título, estado (completada o pendiente) y fecha de creación.
 - **Formulario para agregar tareas**: Permite agregar nuevas tareas a la lista.
 - **Editar y eliminar tareas**: Puedes editar o eliminar tareas directamente desde la lista.
